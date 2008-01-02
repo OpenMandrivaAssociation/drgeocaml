@@ -21,6 +21,7 @@ BuildRequires:  gtk+2-devel
 BuildRequires:  gmp-devel
 BuildRequires:  librsvg-devel
 BuildRequires:  ImageMagick
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 DrGeoCaml is a dynamic geometry software.
