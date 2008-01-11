@@ -42,17 +42,6 @@ install -d %{buildroot}%{_bindir}
 make install BINDIR=%{buildroot}%{_bindir}
 
 # menu entry
-mkdir -p %{buildroot}%{_menudir}
-cat > %{buildroot}%{_menudir}/%{name} << EOF
-?package(%{name}): \
-    command="%{_bindir}/%{name}" \
-    icon="drgeocaml.png" \
-    title="%{title}" \
-    longtitle="%{longtitle}" \
-    needs="x11" \
-    section="More Applications/Sciences/Mathematics" \
-    xdg="true"
-EOF
 
 install -d -m 755 %{buildroot}%{_datadir}/applications
 cat >  %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -87,7 +76,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc AUTHORS INSTALL README README.i18n TODO FAQ
 %{_bindir}/%{name}
-%{_menudir}/%{name}
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
