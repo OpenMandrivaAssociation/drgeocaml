@@ -66,11 +66,15 @@ convert -geometry 16x16 icons/%{name}.png %{buildroot}%{_miconsdir}/%{name}.png
 %clean
 rm -rf %{buildroot}
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_menus
+%endif
 
 %files
 %defattr(-,root,root)
