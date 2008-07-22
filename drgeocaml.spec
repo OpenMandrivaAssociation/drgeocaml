@@ -1,7 +1,7 @@
 %define name    drgeocaml
 %define version cvs20051014
 %define sionver cvs10142005
-%define release %mkrel 5
+%define release %mkrel 7
 
 %define title       Dr.GeoCaml
 %define longtitle   DrGeoCaml Interactive Geometry Tool
