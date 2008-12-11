@@ -20,7 +20,7 @@ BuildRequires:  ocaml-creal-devel
 BuildRequires:  gtk+2-devel
 BuildRequires:  gmp-devel
 BuildRequires:  librsvg-devel
-BuildRequires:  ImageMagick
+BuildRequires:  imagemagick
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
