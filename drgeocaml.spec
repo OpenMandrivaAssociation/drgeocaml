@@ -10,7 +10,7 @@ Name:           %{name}
 Version:        %{version}
 Release:        %{release}
 Summary:        Dynamic geometry software
-URL:            http://home.gna.org/geocaml/
+URL:            https://home.gna.org/geocaml/
 License:        GPL
 Group:          Sciences/Mathematics
 Source0:        http://download.gna.org/geocaml/drgeocaml/%{name}-%{sionver}.tar.bz2
