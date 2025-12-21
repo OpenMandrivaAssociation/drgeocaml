@@ -14,6 +14,7 @@ URL:            https://home.gna.org/geocaml/
 License:        GPL
 Group:          Sciences/Mathematics
 Source0:        http://download.gna.org/geocaml/drgeocaml/%{name}-%{sionver}.tar.bz2
+BuildRequires:	make
 BuildRequires:  ocaml-lablgtk2-devel 
 BuildRequires:  ocaml-xml-light-devel
 BuildRequires:  ocaml-creal-devel
